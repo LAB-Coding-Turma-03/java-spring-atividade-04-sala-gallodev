@@ -12,6 +12,10 @@ public class RepeticaoController {
 
 	@GetMapping("/repeticao")
 	public ResponseEntity<String> simularValores(@RequestParam(name="numero") int numero) {
+		String retorno = "";
+		for(i=0;i>numero;i++){
+			retorno += i;
+		}
 		/*
 		 * Elabore um algoritmo para contar até o numero que foi recebido 
 		 * na variavel numero.
@@ -28,7 +32,7 @@ public class RepeticaoController {
 		 */
 		
 		
-		return ResponseEntity.ok(<APÓS O ALGORITMO COLOCAR A VARIAVEL String DE RETORNO AQUI>);
+		return ResponseEntity.ok(retorno);
 	}
 	
 }
